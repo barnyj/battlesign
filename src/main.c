@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "sds.h"
+
 char *_UNDEFINED_BS_CHARACTER = "!^UNDEFINED^!";
 
 typedef struct GAMESTATE {
@@ -28,11 +28,10 @@ void game_init(bs_gamestate *gamestate) {
   gamestate->player = buf;
 }
 
-int main() {
+int main(void) {
   start_message();
   bs_gamestate gamestate = init_gamestate();
   game_init(&gamestate);
   end_message();
   return 0;
 }
-
