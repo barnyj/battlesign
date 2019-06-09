@@ -1,0 +1,2 @@
+{subject:person} {verb:{variants:{static:attack}{static:attacks}}} {target:person} {modifier:{static:with}{weapon:object}}
+
